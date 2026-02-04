@@ -1,12 +1,57 @@
-<div class="container">
-    <h2 style="color: #ffd700;">👥 DAFTAR ANGGOTA</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px;">
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; color: #ffd700; font-weight: bold;">1. DIMAS (OWNER)</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">2. NAMA TEMAN</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">3. NAMA TEMAN</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">4. NAMA TEMAN</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">5. NAMA TEMAN</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">6. NAMA TEMAN</div>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 8px;">7. NAMA TEMAN</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règle RGN - Anggota</title>
+    <style>
+        body { background-color: #0d0d0d; color: white; font-family: sans-serif; margin: 0; text-align: center; }
+        nav { padding: 20px; background: #1a1a1a; border-bottom: 1px solid #333; position: sticky; top: 0; }
+        nav b { color: #ffd700; margin-right: 10px; }
+        nav a { color: #ffffff; text-decoration: none; font-size: 14px; }
+        nav a.active { font-weight: bold; color: #ffd700; text-decoration: underline; }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        h2 { color: #ffd700; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+        .member-card { background: #1a1a1a; border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #333; }
+        .owner-card { border: 1px solid #ffd700; background: linear-gradient(to right, #1a1a1a, #2a2300); }
+        .info { text-align: left; }
+        .name { font-weight: bold; color: #ffd700; }
+        .role { font-size: 11px; color: #888; text-transform: uppercase; }
+        .stats { font-size: 12px; font-weight: bold; background: #333; padding: 4px 10px; border-radius: 4px; color: #ffd700; }
+        footer { padding: 20px; color: #444; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <b>MENU:</b>
+        <a href="index.html">Home</a> | 
+        <a href="anggota.html" class="active">Anggota</a> | 
+        <a href="galeri.html">Galeri</a>
+    </nav>
+    <div class="container">
+        <h2>LIST ANGGOTA</h2>
+        <div class="member-card owner-card">
+            <div class="info">
+                <div class="name">1. DIMAS</div>
+                <div class="role">👑 Owner / Rusher</div>
+            </div>
+            <div class="stats">MVP</div>
+        </div>
+        <div class="member-card">
+            <div class="info">
+                <div class="name">2. NICKNAME</div>
+                <div class="role">🎯 Sniper</div>
+            </div>
+            <div class="stats">PRO</div>
+        </div>
+        <div class="member-card">
+            <div class="info">
+                <div class="name">3. NICKNAME</div>
+                <div class="role">🛡️ Support</div>
+            </div>
+            <div class="stats">PRO</div>
+        </div>
     </div>
-</div>
+    <footer>&copy; 2026 Règle RGN | Created by Dimas</footer>
+</body>
+</html>
