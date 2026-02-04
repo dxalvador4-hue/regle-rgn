@@ -1,8 +1,37 @@
-<div class="container">
-    <h2 style="color: #ffd700;">📸 GALERI BOOYAH</h2>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px;">
-        <img src="mabar1.jpg" style="width: 100%; border-radius: 5px; border: 1px solid #333;">
-        <img src="mabar2.jpg" style="width: 100%; border-radius: 5px; border: 1px solid #333;">
-        <img src="logo.png" style="width: 100%; border-radius: 5px; border: 1px solid #333;">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règle RGN - Galeri</title>
+    <style>
+        body { background-color: #0d0d0d; color: white; font-family: sans-serif; margin: 0; text-align: center; }
+        nav { padding: 20px; background: #1a1a1a; border-bottom: 1px solid #333; position: sticky; top: 0; }
+        nav b { color: #ffd700; margin-right: 10px; }
+        nav a { color: #ffffff; text-decoration: none; font-size: 14px; }
+        nav a.active { font-weight: bold; color: #ffd700; text-decoration: underline; }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .gallery-grid img { width: 100%; border-radius: 8px; border: 1px solid #333; transition: 0.3s; }
+        .gallery-grid img:hover { border-color: #ffd700; transform: scale(1.03); }
+        footer { padding: 20px; color: #444; font-size: 12px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <b>MENU:</b>
+        <a href="index.html">Home</a> | 
+        <a href="anggota.html">Anggota</a> | 
+        <a href="galeri.html" class="active">Galeri</a>
+    </nav>
+    <div class="container">
+        <h2 style="color: #ffd700;">📸 BOOYAH GALLERY</h2>
+        <div class="gallery-grid">
+            <img src="logo.png">
+            <img src="logo.png">
+        </div>
+        <p style="color: #444; font-size: 11px; margin-top: 20px;">Upload foto mabar dengan nama mabar1.jpg agar muncul di sini.</p>
     </div>
-</div>
+    <footer>&copy; 2026 Règle RGN | Created by Dimas</footer>
+</body>
+</html>
