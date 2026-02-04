@@ -47,4 +47,35 @@
     </div>
     <footer>&copy; 2026 Règle RGN | Created by Dimas</footer>
 </body>
+    <audio id="bgMusic" loop>
+    <source src="Audio.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung pemutar musik.
+</audio>
+
+<div id="musicControl" onclick="toggleMusic()" style="position: fixed; bottom: 80px; right: 20px; background: #ffd700; color: black; padding: 10px; border-radius: 50%; cursor: pointer; z-index: 1000; box-shadow: 0 0 10px rgba(0,0,0,0.5); font-size: 20px;">
+    🎵
+</div>
+
+<script>
+    var music = document.getElementById("bgMusic");
+    var isPlaying = false;
+
+    function toggleMusic() {
+        if (isPlaying) {
+            music.pause();
+            document.getElementById("musicControl").innerHTML = "🔇";
+        } else {
+            music.play();
+            document.getElementById("musicControl").innerHTML = "🎵";
+        }
+        isPlaying = !isPlaying;
+    }
+
+    // Auto-play biasanya diblokir browser, jadi musik akan mulai saat layar pertama kali diklik
+    window.addEventListener('click', function() {
+        if(!isPlaying) {
+            toggleMusic();
+        }
+    }, { once: true });
+</script>
 </html>
