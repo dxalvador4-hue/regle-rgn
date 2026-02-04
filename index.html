@@ -3,124 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Règle RGN - Official Website</title>
+    <title>Règle RGN - Home</title>
     <style>
-        body {
-            background-color: #0d0d0d;
-            color: #ffffff;
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-            flex: 1; /* Biar konten mendorong footer ke bawah */
-        }
-        h1 { color: #ffd700; letter-spacing: 3px; margin-bottom: 5px; }
-        .member-count { color: #888; margin-bottom: 30px; }
-        
-        /* Kotak Rules */
-        .rules-box {
-            background: #1a1a1a;
-            border-left: 8px solid #ffd700;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-        .rules-box h3 { color: #ffd700; margin-top: 0; }
+        body { background-color: #0d0d0d; color: white; font-family: sans-serif; margin: 0; text-align: center; }
+        nav { background: #1a1a1a; padding: 15px; border-bottom: 2px solid #ffd700; sticky; top: 0; }
+        nav a { color: #ffd700; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 14px; }
+        nav a.active { border-bottom: 2px solid white; }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        .logo { width: 120px; border-radius: 50%; border: 3px solid #ffd700; margin-top: 20px; }
+        .box { background: #1a1a1a; padding: 20px; border-radius: 10px; text-align: left; margin-top: 20px; border-left: 5px solid #ffd700; }
         .rules-list { list-style: none; padding: 0; }
-        .rules-list li { padding: 10px 0; border-bottom: 1px solid #333; font-size: 14px; }
-
-        /* Fitur Baru: Daftar Anggota */
-        .member-box {
-            background: #1a1a1a;
-            border: 1px solid #ffd700;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 30px;
-        }
-        .member-box h3 { color: #ffd700; margin-bottom: 15px; }
-        .member-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .member-item {
-            background: #262626;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
-        .slogan { font-style: italic; color: #666; margin: 20px 0; font-size: 13px; }
-        
-        .btn-admin {
-            background: #ffd700;
-            color: black;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        /* Footer Copyright Tengah */
-        footer {
-            padding: 20px;
-            text-align: center;
-            color: #555;
-            font-size: 12px;
-            border-top: 1px solid #222;
-        }
+        .rules-list li { padding: 8px 0; border-bottom: 1px solid #333; font-size: 13px; }
+        footer { margin-top: 50px; color: #555; font-size: 12px; padding-bottom: 20px; }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="active">HOME</a>
+        <a href="anggota.html">ANGGOTA</a>
+        <a href="galeri.html">GALERI</a>
+    </nav>
 
-<div class="container">
-    <h1>RÈGLE RGN</h1>
-    <p class="member-count">Official Group Member: <b>7 Anggota</b></p>
-
-    <div class="rules-box">
-        <h3>WELCOME RÈGLE RGN</h3>
-        <ul class="rules-list">
-            <li>🛡️ WAJIB PUSH GUILD WARS</li>
-            <li>📸 FOTO/VIDEO WAJIB SEKALI LIHAT</li>
-            <li>🚫 JANGAN RASIS ANTAR SUKU</li>
-            <li>🤝 UTAMAKAN SOPAN SANTUN</li>
-            <li>🤬 NO TOXIC DI GRUP</li>
-            <li>⚔️ DILARANG BIKIN MASALAH DENGAN GUILD LAIN</li>
-        </ul>
-    </div>
-
-    <div class="member-box">
-        <h3>LIST ANGGOTA</h3>
-        <div class="member-grid">
-            <div class="member-item">1. Dimas (Owner)</div>
-            <div class="member-item">2. Nama Anggota</div>
-            <div class="member-item">3. Nama Anggota</div>
-            <div class="member-item">4. Nama Anggota</div>
-            <div class="member-item">5. Nama Anggota</div>
-            <div class="member-item">6. Nama Anggota</div>
-            <div class="member-item">7. Nama Anggota</div>
+    <div class="container">
+        <img src="logo.png" class="logo" alt="Logo RGN">
+        <h1>RÈGLE RGN</h1>
+        
+        <div class="box">
+            <h3>📜 RULES GRUP</h3>
+            <ul class="rules-list">
+                <li>🛡️ WAJIB PUSH GUILD WARS</li>
+                <li>📸 FOTO/VIDEO WAJIB SEKALI LIHAT</li>
+                <li>🚫 JANGAN RASIS ANTAR SUKU</li>
+                <li>🤝 UTAMAKAN SOPAN SANTUN</li>
+                <li>🤬 NO TOXIC DI GRUP</li>
+            </ul>
         </div>
+        
+        <p style="font-style: italic; color: #888; margin-top: 30px;">"GUILD INI DIBANGUN HANYA BUAT CARI TEMAN, BUKAN UNTUK CARI MUSUH"</p>
     </div>
 
-    <p class="slogan">"GUILD INI DIBANGUN HANYA BUAT CARI TEMAN, BUKAN UNTUK CARI MUSUH"</p>
-    
-    <a href="https://wa.me/6282378475907" class="btn-admin">HUBUNGI ADMIN</a>
-</div>
-
-<footer>
-    &copy; 2026 Règle RGN | Created by Dimas
-</footer>
-
+    <footer>&copy; 2026 Règle RGN | Created by Dimas</footer>
 </body>
 </html>
